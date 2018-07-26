@@ -4,4 +4,6 @@
 
 {% block content %}
 {{ post_id }}
+<img src="{{ static_url('pictures/{}.jpg'.format(post_id)) }}">
+
 {% end %}

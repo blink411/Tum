@@ -5,8 +5,10 @@
 {% block content %}
 发现页的内容
 <br>
-{% for i in range(1, %}
-<img src="{{ static_url('pictures/i.jgp'.format(i) }}">
+{% for i in range(1,5) %}
+<img src="{{ static_url('pictures/{}.jpg'.format(i)) }}" width="200" >
+
+
 {% end %}
 
 {% end %}

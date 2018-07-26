@@ -3,6 +3,11 @@
 {% block title %}index{% end %}
 
 {% block content %}
-首页
+首页<br>
+{% for i in range(1,5) %}
+<a href="/post/{{ i }}"><img src="{{ static_url('pictures/{}.jpg'.format(i)) }}" width="800"></a>
+<br>
+{% end %}
+
 
 {% end %}
