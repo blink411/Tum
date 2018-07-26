@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}发现页{% end %}
+
+{% block content %}
+发现页的内容
+<br>
+{% for i in range(1, %}
+<img src="{{ static_url('pictures/i.jgp'.format(i) }}}">
+{% end %}
+
+{% end %}
